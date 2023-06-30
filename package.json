@@ -1,7 +1,7 @@
 {
   "name": "template-repo",
   "version": "1.0.0",
-  "description": "",
+  "description": "#### By _**{List of contributors}**_",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode=development",

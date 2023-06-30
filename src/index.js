@@ -1,21 +1,36 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/styles.css';
+import './../css/styles.css';
+import ExchangeRate from './js/ExchangeRate.js';
 
+function getRate(amount, baseCurrency, exchangeCurrency) {
+    ExchangeRate.getRate(amount, baseCurrency, exchangeCurrency)
+        .then(function (response) {
+            if (response.conversion_rates) {
+                printElements(response)
 
-function handleForm() {
-  event.preventDefault();
-  // document.querySelector('#response').innerText = null;
-  // const length1 = parseInt(document.querySelector('#length1').value);
-  // const length2 = parseInt(document.querySelector('#length2').value);
-  // const length3 = parseInt(document.querySelector('#length3').value);
-  // const triangle = new Triangle(length1, length2, length3);
-  // const response = triangle.checkType();
-  // const pTag = document.createElement("p");
-  // pTag.append(`Your result is: ${response}.`);
-  // document.querySelector('#response').append(pTag);
+            }
+            else {
+                printError(response)
+            }
+    })
+}
+// UI logic
+function printElements(response) {
+    
 }
 
-window.addEventListener("load", function() {
-  // document.querySelector("#triangle-checker-form").addEventListener("submit", handleTriangleForm);
-});
+function printError(error) {
+    
+}
+
+function handleForm(event) {
+    event.preventDefault();
+    const amount = document.querySelector("#amount")
+    const baseCurrency = document.querySelector("#basecurrency").value;
+    const exchangeCurrency = document.querySelector("#exchangeCurrency").value;
+    getRate(amount, baseCurrency, exchangeCurrency)
+    document.getElementById('userInput').reset();
+}
+
+document.querySelector("userInput").addEventListener("submit", handleForm);

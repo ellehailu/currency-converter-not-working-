@@ -20,7 +20,7 @@ module.exports = {
         verbose: true
     }),
     new HtmlWebpackPlugin({
-      title: 'Template Repository',
+      title: 'Exchange Rate',
       template: './src/index.html',
       inject: 'body'
     }),
