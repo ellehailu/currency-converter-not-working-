@@ -1,6 +1,6 @@
-# _{Application Name}_
+# _Currency Exchanger_
 
-#### By _**{List of contributors}**_
+#### By _**Elle Hailu**_
 
 #### _{Brief description of application}_
 
@@ -13,7 +13,7 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_A user is able to enter an amount in one of the five currencies available , then specify another currency and submit a form. The user is then able to see the total amount they entered in converted currency._
 
 ## Setup/Installation Requirements
 
@@ -31,7 +31,8 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 - _should go here_
 
 ## License
+
 _MIT_ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 _{Let people know what to do if they run into any issues or have questions, ideas or concerns. Encourage them to contact you or make a contribution to the code.}_
 
-Copyright (c) _date_ _author name(s)_
+Copyright (c) _2023_ _Elle Hailu_
