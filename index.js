@@ -1,7 +1,7 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './../css/styles.css';
-import ExchangeRate from './js/ExchangeRate.js';
+import ExchangeRate from './src/js/ExchangeRate.js';
 
 function getRate(amount, baseCurrency, exchangeCurrency) {
     ExchangeRate.getRate(amount, baseCurrency, exchangeCurrency)
